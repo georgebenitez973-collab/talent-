@@ -76,6 +76,7 @@
         .student-card .student-id { color: var(--text-muted); font-size: 0.9em; font-family: monospace; }
         .student-card .student-prof { color: var(--text-muted); font-size: 0.9em; } /* Estilo para el profesor */
 
+
         .student-team {
             padding: 5px 10px; border-radius: 15px; color: white; font-size: 0.8em; font-weight: 500; background-color: var(--team-color);
         }
@@ -262,7 +263,7 @@
                     { id: '382999', name: 'Alvarez Santiago Cristhian Rafael', profesor: 'Luna', team: 7, presentationTime: '10:30-10:50', sala: 'A', interviewTime: '9:35-9:55', entrevistador: 8, networkingTime: '9:50-10:25', expositor: 2 },
                     { id: '549581', name: 'Arroyo Vargas Hanna Janette', profesor: 'Luna', team: 7, presentationTime: '10:30-10:50', sala: 'A', interviewTime: '9:35-9:55', entrevistador: 9, networkingTime: '9:50-10:25', expositor: 3 },
                     { id: '569010', name: 'Aymerich Bringas José Luis', profesor: 'Luna', team: 7, presentationTime: '10:30-10:50', sala: 'A', interviewTime: '9:35-9:55', entrevistador: 10, networkingTime: '9:50-10:25', expositor: 4 },
-                    { id: '433549', name: 'Colmeriares Barrera Bruno', profesor: 'Luna', team: 7, presentationTime: '10:30-10:50', sala: 'A', interviewTime: '10:15-10:35', entrevistador: 7, networkingTime: '9:50-10:25', expositor: 5 }, // Nombre como en PDF
+                    { id: '433549', name: 'Colmeriares Barrera Bruno', profesor: 'Luna', team: 7, presentationTime: '10:30-10:50', sala: 'A', interviewTime: '10:15-10:35', entrevistador: 7, networkingTime: '9:50-10:25', expositor: 5 },
                     // --- Equipo 8 (Luna) ---
                     { id: '576469', name: 'Cruz Cruz Daira', profesor: 'Luna', team: 8, presentationTime: '10:30-10:50', sala: 'B', interviewTime: '10:15-10:35', entrevistador: 8, networkingTime: '9:50-10:25', expositor: 1 },
                     { id: '527134', name: 'Deloya González Guillermo', profesor: 'Luna', team: 8, presentationTime: '10:30-10:50', sala: 'B', interviewTime: '10:15-10:35', entrevistador: 9, networkingTime: '9:50-10:25', expositor: 2 },
@@ -439,6 +440,24 @@
                 });
                 return data;
             }
+            
+            function cleanTime(timeStr) {
+                if (!timeStr || !timeStr.includes('-')) return null;
+                
+                let [startStr, endStr] = timeStr.split('-').map(s => s.trim().replace(/:/g, '')); // Quita : y espacios
+                
+                // Corregir horas como '955' a '0955'
+                if (startStr.length === 3) startStr = `0${startStr}`;
+                if (endStr.length === 3) endStr = `0${endStr}`;
+
+                // Volver a formatear a HH:MM
+                if (startStr.length === 4) startStr = `${startStr.slice(0, 2)}:${startStr.slice(2)}`;
+                if (endStr.length === 4) endStr = `${endStr.slice(0, 2)}:${endStr.slice(2)}`;
+
+                if (!startStr.includes(':') || !endStr.includes(':')) return null; // No válida
+                
+                return `${startStr} - ${endStr}`;
+            }
 
             function processSchedules(data) {
                 students = {};
@@ -449,20 +468,10 @@
                     const studentActivities = [];
 
                     const createActivity = (timeRange, title, location) => {
-                        if (!timeRange || !timeRange.includes('-')) return; // No crear actividad si no hay hora
-                        
-                        // Limpiar horas con typos
-                        const cleanedTimeRange = timeRange.replace(/:/g, '').replace(' ', ''); // Quita : y espacios
-                        let [startStr, endStr] = cleanedTimeRange.split('-');
-                        
-                        // Formatear a HH:MM
-                        if (startStr.length === 3) startStr = `0${startStr}`;
-                        if (endStr.length === 3) endStr = `0${endStr}`;
-                        if (startStr.length === 4) startStr = `${startStr.slice(0, 2)}:${startStr.slice(2)}`;
-                        if (endStr.length === 4) endStr = `${endStr.slice(0, 2)}:${endStr.slice(2)}`;
+                        const cleanedTime = cleanTime(timeRange); // Limpiar el string de hora
+                        if (!cleanedTime) return; // No crear actividad si la hora no es válida
 
-                        if (!startStr.includes(':') || !endStr.includes(':')) return; // No válida
-
+                        const [startStr, endStr] = cleanedTime.split('-').map(s => s.trim());
                         const [startH, startM] = startStr.split(':');
                         const [endH, endM] = endStr.split(':');
 
@@ -578,7 +587,7 @@
                             <div>
                                 <h3>${student.name}</h3>
                                 <span class="student-id">(${student.id})</span><br>
-                                <span class="student-prof">Profesor: ${student.profesor}</span>
+                                <span class="student-prof">Profesor: ${student.profesor || 'N/A'}</span>
                             </div>
                             <span class="student-team">Equipo ${student.team}</span>
                         </div>
@@ -604,5 +613,7 @@
             initApp();
         });
     </script>
+</body>
+</html>
 </body>
 </html>
