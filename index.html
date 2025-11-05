@@ -218,80 +218,80 @@
             // ==============================================================================
             const initialMasterData = {
                 students: [
-                    // Equipo 1
-                    { id: '00565156', name: 'Alonso Farfan Mikel Javier', team: 1, presentationTime: '9:15 - 9:35', sala: 'A', interviewTime: '9:55 - 10:15', entrevistador: 1, networkingTime: '11:00 - 11:35', expositor: 1 },
-                    { id: '00382999', name: 'Alvarez Santiago Cristhian Rafael', team: 1, presentationTime: '9:15 - 9:35', sala: 'A', interviewTime: '9:55 - 10:15', entrevistador: 2, networkingTime: '11:00 - 11:35', expositor: 2 },
-                    { id: '00549581', name: 'Arroyo Vargas Hanna Janette', team: 1, presentationTime: '9:15 - 9:35', sala: 'A', interviewTime: '9:55 - 10:15', entrevistador: 3, networkingTime: '11:00 - 11:35', expositor: 3 },
-                    { id: '00569010', name: 'Aymerich Bringas José Luis', team: 1, presentationTime: '9:15 - 9:35', sala: 'A', interviewTime: '9:55 - 10:15', entrevistador: 4, networkingTime: '11:00 - 11:35', expositor: 4 },
-                    { id: '00578939', name: 'Bello Martinez Emiliano', team: 1, presentationTime: '9:15 - 9:35', sala: 'A', interviewTime: '9:35 - 9:55', entrevistador: 4, networkingTime: '11:00 - 11:35', expositor: 5 }, // Ajustado ID y horario entrevista
-                    // Equipo 2
-                    { id: '00433549', name: 'Colmenares Barrera Bruno', team: 2, presentationTime: '9:15 - 9:35', sala: 'B', interviewTime: '9:35 - 9:55', entrevistador: 5, networkingTime: '11:00 - 11:35', expositor: 1 },
-                    { id: '00576469', name: 'Cruz Cruz Daira', team: 2, presentationTime: '9:15 - 9:35', sala: 'B', interviewTime: '9:35 - 9:55', entrevistador: 6, networkingTime: '11:00 - 11:35', expositor: 2 },
-                    { id: '00527134', name: 'Deloya González Guillermo', team: 2, presentationTime: '9:15 - 9:35', sala: 'B', interviewTime: '9:35 - 9:55', entrevistador: 7, networkingTime: '11:00 - 11:35', expositor: 3 },
-                    { id: '00589649', name: 'Espejel Ramos Diego', team: 2, presentationTime: '9:15 - 9:35', sala: 'B', interviewTime: '9:55 - 10:15', entrevistador: 6, networkingTime: '11:00 - 11:35', expositor: 4 },
-                    { id: '00524719', name: 'de la Rosa Burgos Alvaro Alejandro', team: 2, presentationTime: '9:15 - 9:35', sala: 'B', interviewTime: '9:55 - 10:15', entrevistador: 5, networkingTime: '11:00 - 11:35', expositor: 5 }, // Ajustado ID
-                    // Equipo 3
-                    { id: '00563562', name: 'García Romero Antonio Salvador', team: 3, presentationTime: '9:40 - 10:00', sala: 'A', interviewTime: '9:15 - 9:35', entrevistador: 8, networkingTime: '10:25 - 11:00', expositor: 1 },
-                    { id: '00561018', name: 'Gómez Sobrino José Luis', team: 3, presentationTime: '9:40 - 10:00', sala: 'A', interviewTime: '9:15 - 9:35', entrevistador: 9, networkingTime: '10:25 - 11:00', expositor: 2 },
-                    { id: '00558588', name: 'Huerta Mendoza Raúl', team: 3, presentationTime: '9:40 - 10:00', sala: 'A', interviewTime: '9:15 - 9:35', entrevistador: 1, networkingTime: '10:25 - 11:00', expositor: 3 },
-                    { id: '00476946', name: 'Merlin Hernández Aishly Ximena', team: 3, presentationTime: '9:40 - 10:00', sala: 'A', interviewTime: '9:15 - 9:35', entrevistador: 2, networkingTime: '10:25 - 11:00', expositor: 4 },
-                    { id: '00523828', name: 'Diaz Mayo José Pablo', team: 3, presentationTime: '9:40 - 10:00', sala: 'A', interviewTime: '9:15 - 9:35', entrevistador: 10, networkingTime: '10:25 - 11:00', expositor: 5 }, // Ajustado ID
-                    // Equipo 4
-                    { id: '00588640', name: 'Monroy Garcia Misael Matias', team: 4, presentationTime: '9:40 - 10:00', sala: 'B', interviewTime: '9:15 - 9:35', entrevistador: 4, networkingTime: '10:25 - 11:00', expositor: 1 },
-                    { id: '00584073', name: 'Ochoa Ramirez Julián', team: 4, presentationTime: '9:40 - 10:00', sala: 'B', interviewTime: '9:15 - 9:35', entrevistador: 5, networkingTime: '10:25 - 11:00', expositor: 2 },
-                    { id: '00560560', name: 'Olvera Quintanar Mario Santiago', team: 4, presentationTime: '9:40 - 10:00', sala: 'B', interviewTime: '9:15 - 9:35', entrevistador: 6, networkingTime: '10:25 - 11:00', expositor: 3 },
-                    { id: '00449964', name: 'Ortega Rosario Erika Gabriela', team: 4, presentationTime: '9:40 - 10:00', sala: 'B', interviewTime: '9:15 - 9:35', entrevistador: 3, networkingTime: '10:25 - 11:00', expositor: 4 },
-                    { id: '00497686', name: 'Jiménez Gómez Omar Michel', team: 4, presentationTime: '9:40 - 10:00', sala: 'B', interviewTime: '9:15 - 9:35', entrevistador: 7, networkingTime: '10:25 - 11:00', expositor: 5 }, // Ajustado ID
-                    // Equipo 5
-                    { id: '00571035', name: 'Osorio Vázquez Laura', team: 5, presentationTime: '10:05 - 10:25', sala: 'A', interviewTime: '10:15 - 10:35', entrevistador: 6, networkingTime: '11:00 - 11:35', expositor: 1 },
-                    { id: '00566072', name: 'Payalaf de Gasperin Oscar Daniel', team: 5, presentationTime: '10:05 - 10:25', sala: 'A', interviewTime: '9:55 - 10:15', entrevistador: 7, networkingTime: '11:00 - 11:35', expositor: 2 },
-                    { id: '00483215', name: 'Pérez Amezcua Travis David', team: 5, presentationTime: '10:05 - 10:25', sala: 'A', interviewTime: '9:55 - 10:15', entrevistador: 8, networkingTime: '11:00 - 11:35', expositor: 3 },
-                    { id: '00579993', name: 'Ramirez Castañón Gabriela', team: 5, presentationTime: '10:05 - 10:25', sala: 'A', interviewTime: '9:55 - 10:15', entrevistador: 9, networkingTime: '11:00 - 11:35', expositor: 4 },
-                    { id: '00464515', name: 'Monterrosas Mirón Karla Antonia', team: 5, presentationTime: '10:05 - 10:25', sala: 'A', interviewTime: '9:55 - 10:15', entrevistador: 10, networkingTime: '11:00 - 11:35', expositor: 5 }, // Ajustado ID
-                    // Equipo 6
-                    { id: '00562176', name: 'Ramírez Hernández José Vladimir', team: 6, presentationTime: '10:05 - 10:25', sala: 'B', interviewTime: '10:15 - 10:35', entrevistador: 2, networkingTime: '9:15 - 9:50', expositor: 4 },
-                    { id: '00565874', name: 'Ramírez Rodríguez Diego Antonio', team: 6, presentationTime: '10:05 - 10:25', sala: 'B', interviewTime: '10:15 - 10:35', entrevistador: 3, networkingTime: '9:15 - 9:50', expositor: 5 },
-                    { id: '00552919', name: 'Rámos Cano Diego Estevan', team: 6, presentationTime: '10:05 - 10:25', sala: 'B', interviewTime: '9:35 - 9:55', entrevistador: 1, networkingTime: '11:00 - 11:35', expositor: 1 },
-                    { id: '00561342', name: 'Robles Muñiz Valeria', team: 6, presentationTime: '10:05 - 10:25', sala: 'B', interviewTime: '9:35 - 9:55', entrevistador: 2, networkingTime: '11:00 - 11:35', expositor: 2 },
-                    { id: '00556562', name: 'Rodriguez Romero Mayte', team: 6, presentationTime: '10:05 - 10:25', sala: 'B', interviewTime: '9:35 - 9:55', entrevistador: 3, networkingTime: '11:00 - 11:35', expositor: 3 },
-                    { id: '00545786', name: 'Peniche Pérez Esteban', team: 6, presentationTime: '10:05 - 10:25', sala: 'B', interviewTime: '11:15 - 11:35', entrevistador: 1, networkingTime: '9:15 - 9:50', expositor: 1 }, // Ajustado ID
-                    // Equipo 7
-                    { id: '00514530', name: 'Rojas García Lucia', team: 7, presentationTime: '10:30 - 10:50', sala: 'A', interviewTime: '10:15 - 10:35', entrevistador: 10, networkingTime: '9:15 - 9:50', expositor: 2 },
-                    { id: '00552094', name: 'Sánchez Rojas Emanuel', team: 7, presentationTime: '10:30 - 10:50', sala: 'A', interviewTime: '11:15 - 11:35', entrevistador: 2, networkingTime: '9:15 - 9:50', expositor: 3 },
-                    { id: '00554124', name: 'Santiago Morales Arantza Gabriela', team: 7, presentationTime: '10:30 - 10:50', sala: 'A', interviewTime: '11:15 - 11:35', entrevistador: 3, networkingTime: '9:15 - 9:50', expositor: 4 },
-                    { id: '00478311', name: 'Torres Arce Emiliano', team: 7, presentationTime: '10:30 - 10:50', sala: 'A', interviewTime: '11:15 - 11:35', entrevistador: 4, networkingTime: '9:15 - 9:50', expositor: 5 },
-                    { id: '00494379', name: 'Vázquez Falcón lan Moisés', team: 7, presentationTime: '10:30 - 10:50', sala: 'A', interviewTime: '11:15 - 11:35', entrevistador: 5, networkingTime: '9:15 - 9:50', expositor: 1 },
-                    { id: '00525597', name: 'Tejeda Flores Zara Valentina', team: 7, presentationTime: '10:30 - 10:50', sala: 'A', interviewTime: '11:15 - 11:35', entrevistador: 6, networkingTime: '9:15 - 9:50', expositor: 2 }, // Ajustado ID
-                    // Equipo 8
-                    { id: '00543019', name: 'Briones Quiyono Ana Sofia', team: 8, presentationTime: '10:30 - 10:50', sala: 'B', interviewTime: '10:15 - 10:35', entrevistador: 4, networkingTime: '9:15 - 9:50', expositor: 3 },
-                    { id: '00574765', name: 'Flores Arcos Jesús Amauri', team: 8, presentationTime: '10:30 - 10:50', sala: 'B', interviewTime: '10:35 - 10:55', entrevistador: 5, networkingTime: '9:15 - 9:50', expositor: 4 },
-                    { id: '00531714', name: 'Jiménez González Victor Manuel', team: 8, presentationTime: '10:30 - 10:50', sala: 'B', interviewTime: '10:15 - 10:35', entrevistador: 5, networkingTime: '9:15 - 9:50', expositor: 5 },
-                    { id: '00582580', name: 'Olaya Camela Claudia', team: 8, presentationTime: '10:30 - 10:50', sala: 'B', interviewTime: '10:15 - 10:35', entrevistador: 1, networkingTime: '9:15 - 9:50', expositor: 1 },
-                    { id: '00563340', name: 'Sánchez Dominguez Santiago', team: 8, presentationTime: '10:30 - 10:50', sala: 'B', interviewTime: '11:35 - 11:55', entrevistador: 1, networkingTime: '9:15 - 9:50', expositor: 2 },
-                    // Equipo 9
-                    { id: '00530047', name: 'Camarillo Sánchez Juan Alberto', team: 9, presentationTime: '10:55 - 11:15', sala: 'A', interviewTime: '10:55 - 11:15', entrevistador: 1, networkingTime: '9:15 - 9:50', expositor: 3 },
-                    { id: '00543066', name: 'Forcelledo Bledi Carlota', team: 9, presentationTime: '10:55 - 11:15', sala: 'A', interviewTime: '10:35 - 10:55', entrevistador: 2, networkingTime: '9:15 - 9:50', expositor: 4 },
-                    { id: '00571883', name: 'Limón Mata Alexa', team: 9, presentationTime: '10:55 - 11:15', sala: 'A', interviewTime: '10:35 - 10:55', entrevistador: 3, networkingTime: '9:15 - 9:50', expositor: 5 },
-                    { id: '00495238', name: 'Pineda Bello lan Miguel', team: 9, presentationTime: '10:55 - 11:15', sala: 'A', interviewTime: '11:35 - 11:55', entrevistador: 2, networkingTime: '9:15 - 9:50', expositor: 1 },
-                    { id: '00441251', name: 'Soriano Vergara Pedro', team: 9, presentationTime: '10:55 - 11:15', sala: 'A', interviewTime: '11:35 - 11:55', entrevistador: 3, networkingTime: '9:15 - 9:50', expositor: 2 },
-                    // Equipo 10
-                    { id: '00562237', name: 'Campuzano Silva Monserrat', team: 10, presentationTime: '10:55 - 11:15', sala: 'B', interviewTime: '10:15 - 10:35', entrevistador: 7, networkingTime: '9:15 - 9:50', expositor: 3 },
-                    { id: '00569121', name: 'Garrido del Valle Emiliano', team: 10, presentationTime: '10:55 - 11:15', sala: 'B', interviewTime: '10:35 - 10:55', entrevistador: 4, networkingTime: '9:15 - 9:50', expositor: 4 },
-                    { id: '00544679', name: 'Lira González Adalberto', team: 10, presentationTime: '10:55 - 11:15', sala: 'B', interviewTime: '10:35 - 10:55', entrevistador: 5, networkingTime: '9:15 - 9:50', expositor: 5 },
-                    { id: '00561988', name: 'Ramirez Vera Kevin Samuel', team: 10, presentationTime: '10:55 - 11:15', sala: 'B', interviewTime: '10:35 - 10:55', entrevistador: 6, networkingTime: '9:15 - 9:50', expositor: 1 },
-                    { id: '00535961', name: 'Torres Sánchez Luis Carlos', team: 10, presentationTime: '10:55 - 11:15', sala: 'B', interviewTime: '10:35 - 10:55', entrevistador: 7, networkingTime: '9:15 - 9:50', expositor: 2 },
-                    // Equipo 11
-                    { id: '00549936', name: 'Enriquez Colchado Emilio', team: 11, presentationTime: '11:20 - 11:40', sala: 'A', interviewTime: '10:55 - 11:15', entrevistador: 2, networkingTime: '9:15 - 9:50', expositor: 3 },
-                    { id: '00493870', name: 'Gutiérrez Jiménez Jael Ricardo', team: 11, presentationTime: '11:20 - 11:40', sala: 'A', interviewTime: '10:55 - 11:15', entrevistador: 3, networkingTime: '9:15 - 9:50', expositor: 4 },
-                    { id: '00552509', name: 'Moreno Flores Karen Ayari', team: 11, presentationTime: '11:20 - 11:40', sala: 'A', interviewTime: '10:55 - 11:15', entrevistador: 4, networkingTime: '9:15 - 9:50', expositor: 5 },
-                    { id: '00550267', name: 'Saint Martin Sosa Diego', team: 11, presentationTime: '11:20 - 11:40', sala: 'A', interviewTime: '10:55 - 11:15', entrevistador: 5, networkingTime: '9:15 - 9:50', expositor: 1 },
-                    { id: '00557721', name: 'Vega Ibarra Angel Abraham', team: 11, presentationTime: '11:20 - 11:40', sala: 'A', interviewTime: '10:55 - 11:15', entrevistador: 6, networkingTime: '9:15 - 9:50', expositor: 2 },
-                    // Equipo 12
-                    { id: '00571685', name: 'Félix Aizpuru Maximiliano', team: 12, presentationTime: '11:20 - 11:40', sala: 'B', interviewTime: '11:35 - 11:55', entrevistador: 4, networkingTime: '9:15 - 9:50', expositor: 3 },
-                    { id: '00492520', name: 'Hernández López Francisco', team: 12, presentationTime: '11:20 - 11:40', sala: 'B', interviewTime: '11:35 - 11:55', entrevistador: 5, networkingTime: '9:15 - 9:50', expositor: 4 },
-                    { id: '00557695', name: 'Navarrete Flores Emiliano', team: 12, presentationTime: '11:20 - 11:40', sala: 'B', interviewTime: '11:35 - 11:55', entrevistador: 6, networkingTime: '9:15 - 9:50', expositor: 5 },
-                    { id: '00508475', name: 'Salazar Huerta Rodrigo', team: 12, presentationTime: '11:20 - 11:40', sala: 'B', interviewTime: '11:35 - 11:55', entrevistador: 7, networkingTime: '9:15 - 9:50', expositor: 1 },
-                    { id: '00571014', name: 'Zermeño Sánchez Tonatiuh', team: 12, presentationTime: '11:20 - 11:40', sala: 'B', interviewTime: '11:35 - 11:55', entrevistador: 8, networkingTime: '9:15 - 9:50', expositor: 2 },
+                    // --- Equipo 1 (Del Rio) ---
+                    { id: '00578939', name: 'Bello Martinez Emiliano', team: 1, presentationTime: '9:15 - 9:35', sala: 'A', interviewTime: '9:55 - 10:15', entrevistador: 1, networkingTime: '10:25 - 11:00', expositor: 1 },
+                    { id: '00524719', name: 'de la Rosa Burgos Alvaro Alejandro', team: 1, presentationTime: '9:15 - 9:35', sala: 'A', interviewTime: '9:55 - 10:15', entrevistador: 2, networkingTime: '10:25 - 11:00', expositor: 2 },
+                    { id: '00523828', name: 'Diaz Mayo José Pablo', team: 1, presentationTime: '9:15 - 9:35', sala: 'A', interviewTime: '9:55 - 10:15', entrevistador: 3, networkingTime: '10:25 - 11:00', expositor: 3 },
+                    { id: '00497686', name: 'Jiménez Gómez Omar Michel', team: 1, presentationTime: '9:15 - 9:35', sala: 'A', interviewTime: '9:55 - 10:15', entrevistador: 4, networkingTime: '10:25 - 11:00', expositor: 4 },
+                    { id: '00464515', name: 'Monterrosas Mirón Karla Antonia', team: 1, presentationTime: '9:15 - 9:35', sala: 'A', interviewTime: '9:55 - 10:15', entrevistador: 5, networkingTime: '10:25 - 11:00', expositor: 5 },
+                    { id: '00545786', name: 'Peniche Pérez Esteban', team: 1, presentationTime: '9:15 - 9:35', sala: 'A', interviewTime: '10:15 - 10:35', entrevistador: 1, networkingTime: '10:25 - 11:00', expositor: 1 },
+                    { id: '00525597', name: 'Tejeda Flores Zara Valentina', team: 1, presentationTime: '9:15 - 9:35', sala: 'A', interviewTime: '10:15 - 10:35', entrevistador: 2, networkingTime: '10:25 - 11:00', expositor: 2 },
+                    // --- Equipo 2 (Lechuga) ---
+                    { id: '00543019', name: 'Briones Quiyono Ana Sofia', team: 2, presentationTime: '9:15 - 9:35', sala: 'B', interviewTime: '9:55 - 10:15', entrevistador: 6, networkingTime: '10:25 - 11:00', expositor: 3 },
+                    { id: '00530047', name: 'Camarillo Sánchez Juan Alberto', team: 2, presentationTime: '9:15 - 9:35', sala: 'B', interviewTime: '9:55 - 10:15', entrevistador: 7, networkingTime: '10:25 - 11:00', expositor: 4 },
+                    { id: '00562237', name: 'Campuzano Silva Monserrat', team: 2, presentationTime: '9:15 - 9:35', sala: 'B', interviewTime: '9:55 - 10:15', entrevistador: 8, networkingTime: '10:25 - 11:00', expositor: 5 },
+                    { id: '00549936', name: 'Enriquez Colchado Emilio', team: 2, presentationTime: '9:15 - 9:35', sala: 'B', interviewTime: '9:55 - 10:15', entrevistador: 9, networkingTime: '10:25 - 11:00', expositor: 1 },
+                    { id: '00571685', name: 'Félix Aizpuru Maximiliano', team: 2, presentationTime: '9:15 - 9:35', sala: 'B', interviewTime: '9:55 - 10:15', entrevistador: 10, networkingTime: '10:25 - 11:00', expositor: 2 },
+                    // --- Equipo 3 (Lechuga) ---
+                    { id: '00574765', name: 'Flores Arcos Jesús Amauri', team: 3, presentationTime: '9:40 - 10:00', sala: 'A', interviewTime: '9:15 - 9:35', entrevistador: 1, networkingTime: '10:25 - 11:00', expositor: 3 },
+                    { id: '00543066', name: 'Forcelledo Bledi Carlota', team: 3, presentationTime: '9:40 - 10:00', sala: 'A', interviewTime: '9:15 - 9:35', entrevistador: 2, networkingTime: '10:25 - 11:00', expositor: 4 },
+                    { id: '00569121', name: 'Garrido del Valle Emiliano', team: 3, presentationTime: '9:40 - 10:00', sala: 'A', interviewTime: '9:15 - 9:35', entrevistador: 3, networkingTime: '10:25 - 11:00', expositor: 5 },
+                    { id: '00493870', name: 'Gutiérrez Jiménez Jael Ricardo', team: 3, presentationTime: '9:40 - 10:00', sala: 'A', interviewTime: '10:15 - 10:35', entrevistador: 3, networkingTime: '11:00 - 11:35', expositor: 1 },
+                    { id: '00492520', name: 'Hernández López Francisco', team: 3, presentationTime: '9:40 - 10:00', sala: 'A', interviewTime: '10:15 - 10:35', entrevistador: 4, networkingTime: '11:00 - 11:35', expositor: 2 },
+                    // --- Equipo 4 (Lechuga) ---
+                    { id: '00531714', name: 'Jiménez González Victor Manuel', team: 4, presentationTime: '9:40 - 10:00', sala: 'B', interviewTime: '9:15 - 9:35', entrevistador: 4, networkingTime: '10:25 - 11:00', expositor: 3 },
+                    { id: '00571883', name: 'Limón Mata Alexa', team: 4, presentationTime: '9:40 - 10:00', sala: 'B', interviewTime: '9:15 - 9:35', entrevistador: 5, networkingTime: '10:25 - 11:00', expositor: 4 },
+                    { id: '00544679', name: 'Lira González Adalberto', team: 4, presentationTime: '9:40 - 10:00', sala: 'B', interviewTime: '9:15 - 9:35', entrevistador: 6, networkingTime: '10:25 - 11:00', expositor: 5 },
+                    { id: '00552509', name: 'Moreno Flores Karen Ayari', team: 4, presentationTime: '9:40 - 10:00', sala: 'B', interviewTime: '10:15 - 10:35', entrevistador: 5, networkingTime: '11:00 - 11:35', expositor: 1 },
+                    { id: '00557695', name: 'Navarrete Flores Emiliano', team: 4, presentationTime: '9:40 - 10:00', sala: 'B', interviewTime: '10:15 - 10:35', entrevistador: 6, networkingTime: '11:00 - 11:35', expositor: 2 },
+                    // --- Equipo 5 (Lechuga) ---
+                    { id: '00582580', name: 'Olaya Camela Claudia', team: 5, presentationTime: '10:05 - 10:25', sala: 'A', interviewTime: '9:15 - 9:35', entrevistador: 7, networkingTime: '11:00 - 11:35', expositor: 3 },
+                    { id: '00495238', name: 'Pineda Bello lan Miguel', team: 5, presentationTime: '10:05 - 10:25', sala: 'A', interviewTime: '9:15 - 9:35', entrevistador: 8, networkingTime: '11:00 - 11:35', expositor: 4 },
+                    { id: '00561988', name: 'Ramirez Vera Kevin Samuel', team: 5, presentationTime: '10:05 - 10:25', sala: 'A', interviewTime: '9:35 - 9:55', entrevistador: 1, networkingTime: '11:00 - 11:35', expositor: 5 },
+                    { id: '00550267', name: 'Saint Martin Sosa Diego', team: 5, presentationTime: '10:05 - 10:25', sala: 'A', interviewTime: '9:35 - 9:55', entrevistador: 2, networkingTime: '11:00 - 11:35', expositor: 1 },
+                    { id: '00508475', name: 'Salazar Huerta Rodrigo', team: 5, presentationTime: '10:05 - 10:25', sala: 'A', interviewTime: '9:35 - 9:55', entrevistador: 3, networkingTime: '11:00 - 11:35', expositor: 2 },
+                    // --- Equipo 6 (Lechuga) ---
+                    { id: '00563340', name: 'Sánchez Dominguez Santiago', team: 6, presentationTime: '10:05 - 10:25', sala: 'B', interviewTime: '9:15 - 9:35', entrevistador: 9, networkingTime: '11:00 - 11:35', expositor: 3 },
+                    { id: '00441251', name: 'Soriano Vergara Pedro', team: 6, presentationTime: '10:05 - 10:25', sala: 'B', interviewTime: '9:15 - 9:35', entrevistador: 10, networkingTime: '11:00 - 11:35', expositor: 4 },
+                    { id: '00535961', name: 'Torres Sánchez Luis Carlos', team: 6, presentationTime: '10:05 - 10:25', sala: 'B', interviewTime: '9:35 - 9:55', entrevistador: 4, networkingTime: '11:00 - 11:35', expositor: 5 },
+                    { id: '00557721', name: 'Vega Ibarra Angel Abraham', team: 6, presentationTime: '10:05 - 10:25', sala: 'B', interviewTime: '9:35 - 9:55', entrevistador: 5, networkingTime: '11:00 - 11:35', expositor: 1 },
+                    { id: '00571014', name: 'Zermeño Sánchez Tonatiuh', team: 6, presentationTime: '10:05 - 10:25', sala: 'B', interviewTime: '9:35 - 9:55', entrevistador: 6, networkingTime: '11:00 - 11:35', expositor: 2 },
+                    // --- Equipo 7 (Luna) ---
+                    { id: '00565156', name: 'Alonso Farfan Mikel Javier', team: 7, presentationTime: '10:30 - 10:50', sala: 'A', interviewTime: '9:35 - 9:55', entrevistador: 7, networkingTime: '9:50 - 10:25', expositor: 1 },
+                    { id: '00382999', name: 'Alvarez Santiago Cristhian Rafael', team: 7, presentationTime: '10:30 - 10:50', sala: 'A', interviewTime: '9:35 - 9:55', entrevistador: 8, networkingTime: '9:50 - 10:25', expositor: 2 },
+                    { id: '00549581', name: 'Arroyo Vargas Hanna Janette', team: 7, presentationTime: '10:30 - 10:50', sala: 'A', interviewTime: '9:35 - 9:55', entrevistador: 9, networkingTime: '9:50 - 10:25', expositor: 3 },
+                    { id: '00569010', name: 'Aymerich Bringas José Luis', team: 7, presentationTime: '10:30 - 10:50', sala: 'A', interviewTime: '9:35 - 9:55', entrevistador: 10, networkingTime: '9:50 - 10:25', expositor: 4 },
+                    { id: '00433549', name: 'Colmenares Barrera Bruno', team: 7, presentationTime: '10:30 - 10:50', sala: 'A', interviewTime: '10:15 - 10:35', entrevistador: 7, networkingTime: '9:50 - 10:25', expositor: 5 },
+                    // --- Equipo 8 (Luna) ---
+                    { id: '00576469', name: 'Cruz Cruz Daira', team: 8, presentationTime: '10:30 - 10:50', sala: 'B', interviewTime: '10:15 - 10:35', entrevistador: 8, networkingTime: '9:50 - 10:25', expositor: 1 },
+                    { id: '00527134', name: 'Deloya González Guillermo', team: 8, presentationTime: '10:30 - 10:50', sala: 'B', interviewTime: '10:15 - 10:35', entrevistador: 9, networkingTime: '9:50 - 10:25', expositor: 2 },
+                    { id: '00589649', name: 'Espejel Ramos Diego', team: 8, presentationTime: '10:30 - 10:50', sala: 'B', interviewTime: '10:15 - 10:35', entrevistador: 10, networkingTime: '9:50 - 10:25', expositor: 3 },
+                    { id: '00563562', name: 'García Romero Antonio Salvador', team: 8, presentationTime: '10:30 - 10:50', sala: 'B', interviewTime: '10:35 - 10:55', entrevistador: 1, networkingTime: '9:50 - 10:25', expositor: 4 },
+                    { id: '00561018', name: 'Gómez Sobrino José Luis', team: 8, presentationTime: '10:30 - 10:50', sala: 'B', interviewTime: '10:35 - 10:55', entrevistador: 2, networkingTime: '9:50 - 10:25', expositor: 5 },
+                    // --- Equipo 9 (Luna) ---
+                    { id: '00558588', name: 'Huerta Mendoza Raúl', team: 9, presentationTime: '10:55 - 11:15', sala: 'A', interviewTime: '10:35 - 10:55', entrevistador: 3, networkingTime: '9:15 - 9:50', expositor: 1 },
+                    { id: '00476946', name: 'Merlin Hernández Aishly Ximena', team: 9, presentationTime: '10:55 - 11:15', sala: 'A', interviewTime: '10:35 - 10:55', entrevistador: 4, networkingTime: '9:15 - 9:50', expositor: 2 },
+                    { id: '00588640', name: 'Monroy Garcia Misael Matias', team: 9, presentationTime: '10:55 - 11:15', sala: 'A', interviewTime: '10:35 - 10:55', entrevistador: 5, networkingTime: '9:15 - 9:50', expositor: 3 },
+                    { id: '00584073', name: 'Ochoa Ramirez Julián', team: 9, presentationTime: '10:55 - 11:15', sala: 'A', interviewTime: '10:35 - 10:55', entrevistador: 6, networkingTime: '9:15 - 9:50', expositor: 4 },
+                    { id: '00560560', name: 'Olvera Quintanar Mario Santiago', team: 9, presentationTime: '10:55 - 11:15', sala: 'A', interviewTime: '10:35 - 10:55', entrevistador: 7, networkingTime: '9:15 - 9:50', expositor: 5 },
+                    // --- Equipo 10 (Luna) ---
+                    { id: '00449964', name: 'Ortega Rosario Erika Gabriela', team: 10, presentationTime: '10:55 - 11:15', sala: 'B', interviewTime: '10:35 - 10:55', entrevistador: 8, networkingTime: '9:15 - 9:50', expositor: 1 },
+                    { id: '00571035', name: 'Osorio Vázquez Laura', team: 10, presentationTime: '10:55 - 11:15', sala: 'B', interviewTime: '10:35 - 10:55', entrevistador: 9, networkingTime: '9:15 - 9:50', expositor: 2 },
+                    { id: '00566072', name: 'Payalaf de Gasperin Oscar Daniel', team: 10, presentationTime: '10:55 - 11:15', sala: 'B', interviewTime: '10:35 - 10:55', entrevistador: 10, networkingTime: '9:15 - 9:50', expositor: 3 },
+                    { id: '00483215', name: 'Pérez Amezcua Travis David', team: 10, presentationTime: '10:55 - 11:15', sala: 'B', interviewTime: '10:55 - 11:15', entrevistador: 1, networkingTime: '9:15 - 9:50', expositor: 4 },
+                    { id: '00579993', name: 'Ramirez Castañón Gabriela', team: 10, presentationTime: '10:55 - 11:15', sala: 'B', interviewTime: '10:55 - 11:15', entrevistador: 2, networkingTime: '9:15 - 9:50', expositor: 5 },
+                    // --- Equipo 11 (Luna) ---
+                    { id: '00562176', name: 'Ramírez Hernández José Vladimir', team: 11, presentationTime: '11:20 - 11:40', sala: 'A', interviewTime: '10:55 - 11:15', entrevistador: 3, networkingTime: '9:15 - 9:50', expositor: 1 },
+                    { id: '00565874', name: 'Ramírez Rodríguez Diego Antonio', team: 11, presentationTime: '11:20 - 11:40', sala: 'A', interviewTime: '10:55 - 11:15', entrevistador: 4, networkingTime: '9:15 - 9:50', expositor: 2 },
+                    { id: '00552919', name: 'Rámos Cano Diego Estevan', team: 11, presentationTime: '11:20 - 11:40', sala: 'A', interviewTime: '10:55 - 11:15', entrevistador: 5, networkingTime: '9:15 - 9:50', expositor: 3 },
+                    { id: '00561342', name: 'Robles Muñiz Valeria', team: 11, presentationTime: '11:20 - 11:40', sala: 'A', interviewTime: '10:55 - 11:15', entrevistador: 6, networkingTime: '9:15 - 9:50', expositor: 4 },
+                    { id: '00556562', name: 'Rodriguez Romero Mayte', team: 11, presentationTime: '11:20 - 11:40', sala: 'A', interviewTime: '10:55 - 11:15', entrevistador: 7, networkingTime: '9:15 - 9:50', expositor: 5 },
+                    // --- Equipo 12 (Luna) ---
+                    { id: '00514530', name: 'Rojas García Lucia', team: 12, presentationTime: '11:20 - 11:40', sala: 'B', interviewTime: '10:55 - 11:15', entrevistador: 8, networkingTime: '9:15 - 9:50', expositor: 1 },
+                    { id: '00552094', name: 'Sánchez Rojas Emanuel', team: 12, presentationTime: '11:20 - 11:40', sala: 'B', interviewTime: '10:55 - 11:15', entrevistador: 9, networkingTime: '9:15 - 9:50', expositor: 2 },
+                    { id: '00554124', name: 'Santiago Morales Arantza Gabriela', team: 12, presentationTime: '11:20 - 11:40', sala: 'B', interviewTime: '10:55 - 11:15', entrevistador: 10, networkingTime: '9:15 - 9:50', expositor: 3 },
+                    { id: '00478311', name: 'Torres Arce Emiliano', team: 12, presentationTime: '11:20 - 11:40', sala: 'B', interviewTime: '11:15 - 11:35', entrevistador: 1, networkingTime: '9:15 - 9:50', expositor: 4 },
+                    { id: '00494379', name: 'Vázquez Falcón lan Moisés', team: 12, presentationTime: '11:20 - 11:40', sala: 'B', interviewTime: '11:15 - 11:35', entrevistador: 2, networkingTime: '9:15 - 9:50', expositor: 5 },
                 ],
                 interviewers: [
                     { id: 1, name: 'Ricardo Morales' }, { id: 2, name: 'Sofia Castillo' }, { id: 3, name: 'Andrea Jiménez' },
